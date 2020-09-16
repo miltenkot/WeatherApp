@@ -1,24 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w3M-oT-lmN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Item 2-->
+        <scene sceneID="04N-BR-IYb">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="lVA-eM-TtP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mkn-s6-QnL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O3y-fJ-pqh">
+                                <rect key="frame" x="20" y="44" width="374" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCell" id="HPm-lz-TQZ">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HPm-lz-TQZ" id="QkS-oJ-1Wb">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="O3y-fJ-pqh" firstAttribute="top" secondItem="rfD-Oq-8Za" secondAttribute="top" id="GAI-fA-O0Z"/>
+                            <constraint firstItem="O3y-fJ-pqh" firstAttribute="centerY" secondItem="Mkn-s6-QnL" secondAttribute="centerY" id="IqH-rT-UPC"/>
+                            <constraint firstItem="O3y-fJ-pqh" firstAttribute="leading" secondItem="Mkn-s6-QnL" secondAttribute="leadingMargin" id="Udj-tz-XMx"/>
+                            <constraint firstItem="O3y-fJ-pqh" firstAttribute="centerX" secondItem="Mkn-s6-QnL" secondAttribute="centerX" id="jkC-mY-0cN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rfD-Oq-8Za"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="oYt-qi-LQ9"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IE7-xc-wHp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="572.46376811594212" y="-111.16071428571428"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="ffr-zZ-iUy">
+            <objects>
+                <viewController id="7aE-O4-pTg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sgp-Ay-EVR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iKS-u0-Fai">
+                                <rect key="frame" x="20" y="44" width="374" height="808"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xTR-76-avK">
+                                <rect key="frame" x="30" y="74" width="354" height="49"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatura" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2d-XV-IpD">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Clear SKY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ra3-GX-vQF">
+                                        <rect key="frame" x="0.0" y="28.5" width="354" height="20.5"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="5nh-jW-Ivj"/>
+                                    <constraint firstAttribute="width" constant="354" id="PBV-mB-FpH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iKS-u0-Fai" firstAttribute="centerX" secondItem="sgp-Ay-EVR" secondAttribute="centerX" id="4bA-Vc-8tU"/>
+                            <constraint firstItem="xTR-76-avK" firstAttribute="leading" secondItem="trk-KO-nCY" secondAttribute="leading" constant="30" id="EO5-a9-7ly"/>
+                            <constraint firstItem="xTR-76-avK" firstAttribute="top" secondItem="trk-KO-nCY" secondAttribute="top" constant="30" id="EvZ-9D-t2J"/>
+                            <constraint firstItem="iKS-u0-Fai" firstAttribute="centerY" secondItem="sgp-Ay-EVR" secondAttribute="centerY" id="Ukz-zA-mKo"/>
+                            <constraint firstItem="iKS-u0-Fai" firstAttribute="top" secondItem="trk-KO-nCY" secondAttribute="top" id="cPV-rh-HKC"/>
+                            <constraint firstItem="iKS-u0-Fai" firstAttribute="leading" secondItem="sgp-Ay-EVR" secondAttribute="leadingMargin" id="oXL-m1-0lm"/>
+                            <constraint firstItem="trk-KO-nCY" firstAttribute="trailing" secondItem="xTR-76-avK" secondAttribute="trailing" constant="30" id="vVc-HL-MQh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="trk-KO-nCY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="enw-pu-Fb6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="unN-t5-2xi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="572.46376811594212" y="-759.375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FyV-lI-DRe">
+            <objects>
+                <tabBarController id="w3M-oT-lmN" customClass="ViewController" customModule="MVVM_TDD_WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c7m-lc-cM5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7aE-O4-pTg" kind="relationship" relationship="viewControllers" id="bdL-ns-3Cw"/>
+                        <segue destination="lVA-eM-TtP" kind="relationship" relationship="viewControllers" id="HeR-Lp-yrS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zTA-VZ-tHp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-346" y="-435"/>
         </scene>
     </scenes>
 </document>
